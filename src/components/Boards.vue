@@ -5,7 +5,7 @@
 
 <script>
 export default {
-  name: 'Categories',
+  name: 'Boards',
 
   data: () => ({
   }),

@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
-import Categories from '../views/Categories.vue'
+import Boards from '../views/Boards.vue'
 
 Vue.use(VueRouter)
 
@@ -20,9 +20,9 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
   },
   {
-    path: '/categories',
-    name: 'Categories',
-    component: Categories
+    path: '/boards',
+    name: 'Boards',
+    component: Boards
   }
 ]
 
