@@ -1,5 +1,6 @@
 <template>
   <div class="categories">
+    <Categories/>
   </div>
 </template>
 
