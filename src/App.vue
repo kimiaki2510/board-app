@@ -1,19 +1,15 @@
 <template>
-  <v-app>
-    <v-main>
-      <HelloWorld/>
-    </v-main>
-  </v-app>
+  <div id="app">
+    <v-container>
+      <router-view/>
+    </v-container>
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld';
-
 export default {
   name: 'App',
-
   components: {
-    HelloWorld,
   },
 
   data: () => ({
