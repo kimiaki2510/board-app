@@ -3,10 +3,10 @@
     <v-card>
       <v-card-text>
         <v-form>
-          <v-text-field v-model="title" label="Title" />          
+          <v-text-field v-model="title" label="Title" />
         </v-form>
         <v-card-actions>
-          <v-btn class="mx-2" fab dark color="indigo" @click="addList">
+          <v-btn class="mx-2" fab dark color="green" @click="addList">
             <v-icon>mdi-plus</v-icon>
           </v-btn>
         </v-card-actions>
