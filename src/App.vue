@@ -14,16 +14,14 @@
         </v-btn>
       </v-toolbar>
     </v-card>
-    <Boards/>
+    <router-view/>
   </v-app>
 </template>
 
 <script>
-import Boards from './components/Boards.vue'
 export default {
   name: 'App',
   components: {
-    Boards
   },
   data: () => ({
     //
