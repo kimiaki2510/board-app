@@ -2,11 +2,25 @@
   <v-container>
     <v-layout>
       <v-flex>
-        <v-data-table :headers='headers' :item='boards'>
-          <template v-slot:item="props">
-            <td class="text-xs-left">{{ props.item.title }}</td>
+        <v-simple-table>
+          <template v-slot:default>
+            <thead>
+              <tr>
+                <th class="text-left">
+                  Title
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr
+                v-for="boards in desserts"
+                :key="boards.title"
+              >
+                <td>{{ boards.title }}</td>
+              </tr>
+            </tbody>
           </template>
-        </v-data-table>
+      </v-simple-table>
         <v-card-actions>
           <v-btn class="mx-2" fab dark color="green" @click="addList">
             <v-icon>mdi-plus</v-icon>
