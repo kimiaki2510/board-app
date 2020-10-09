@@ -12,18 +12,22 @@
         </v-card-actions>
       </v-card-text>
     </v-card>
+    <div>
+      <h2>Boards一覧</h2>
+      <ul>
+        <li v-for="board in boards" v-bind:key="board.id">
+          <input type="checkbox" v-bind:checked="board.done">
+          {{ board.title }}
+        </li>
+      </ul>
+    </div>
   </v-flex>
 </template>
 <script>
 export default {
-  data(){
-    return{
-      title: '',
-    }
-  },
-  method: {
-    addList(){
-      
+  computed: {
+    boards() {
+      return this.$store.state.boards
     }
   }
 }
