@@ -2,7 +2,7 @@
   <v-flex>
     <v-card>
       <v-card-text>
-        <v-form>
+        <v-form v-on:submit.prevent="addBoard">
           <v-text-field v-model="title" label="title" />
         </v-form>
         <v-card-actions>
