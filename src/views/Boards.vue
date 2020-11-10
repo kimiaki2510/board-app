@@ -26,6 +26,11 @@
 </template>
 
 <script>
+//import axios from 'axios';
+
+//const hostName = 'localhost:3000';
+//const path = '/api/v1/boards'
+
 export default {
   data(){
     return {
